@@ -1,16 +1,16 @@
 body {
   box-sizing: border-box;
   width: 1440px;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
   background-color: #fff;
 }
 
 .header {
-  box-sizing: border-box;
   display: grid;
   flex-wrap: nowrap;
   grid-template-columns: repeat(3, 1fr);
   align-items: center;
+  box-sizing: border-box;
   width: 100%;
   min-height: 293px;
   padding-right: 50px;
@@ -38,14 +38,14 @@ body {
 }
 
 .header__logo {
-  place-self: center;
-  width: 148px;
-  height: 105px;
-  padding: 0;
   flex-shrink: 0;
+  place-self: center;
+  max-width: 148px;
+  max-height: 105px;
 }
 
 .address {
+  max-width: 240px;
   font-style: normal;
   line-height: 135%;
 }
@@ -55,13 +55,18 @@ body {
 }
 
 .address a {
+  width: fit-content;
   border-bottom: 1px black solid;
   text-decoration: none;
 }
 
+.address p {
+  max-width: 250px;
+}
+
 .cover {
-  box-sizing: border-box;
   position: relative;
+  box-sizing: border-box;
   padding: 0;
   color: #fff;
   background-image: url(../images/cover.jpg);
@@ -177,10 +182,10 @@ body {
 }
 
 .card {
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  box-sizing: border-box;
   height: 450px;
 }
 
@@ -241,10 +246,10 @@ body {
 }
 
 .about {
-  box-sizing: border-box;
   display: grid;
   grid-template-columns: 1fr 2fr;
   gap: 25px;
+  box-sizing: border-box;
   padding-right: 50px;
   padding-left: 50px;
 }
@@ -284,9 +289,9 @@ body {
 }
 
 .footer {
-  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
+  box-sizing: border-box;
   padding: 180px 50px 90px 50px;
   font-weight: 400;
   font-size: 18px;
